@@ -1,0 +1,32 @@
+version: 2
+
+models:
+
+  - name: stg_customers
+    description: Customer Stage Table
+    columns: 
+      - name: customer_id
+        description: Primary Key for Customers
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: Orders Stage Table
+    columns:
+      - name: order_id
+        description: Primary Key for Orders
+        tests:
+          - unique
+          - not_null
+      - name: status
+        description: Order Status
+        tests:
+          - accepted_values:
+              values:
+                - completed
+                - returned
+                - shipped
+                - placed
+                - return_pending
+
