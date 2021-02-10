@@ -40,10 +40,4 @@ models:
         jaffle_shop
           materialized= 'view'
         stripe
-<<<<<<< HEAD
-            +materialized=view
-=======
-            materialized=view
-
-      
->>>>>>> 800a0b64e8cbbc78e8ed786444e02bb9bf2443c5
+          materialized=view
