@@ -1,11 +1,9 @@
-{% snapshot mock_orders %}
-
-{% set new_schema = {{ source('jaffle_shop') }} + '_snapshot' %}
+{% snapshot mock_orders_snapshot %}
 
 {{
     config(
       target_database='training_db',
-      target_schema=new_schema,
+      target_schema='jaffle_shop',
       unique_key='order_id',
 
       strategy='timestamp',
