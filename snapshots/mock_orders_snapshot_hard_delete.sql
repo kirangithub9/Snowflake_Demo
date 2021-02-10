@@ -1,16 +1,15 @@
-{% snapshot orders_snapshot %}
+{% snapshot mock_orders_snapshot_hard_delete %}
 
-{{
-    config(
-      target_database='training_db',
-      target_schema='jaffle_shop',
-      unique_key='id',
+    {{
+        config(
+          target_schema='jaffle_shop',
+          strategy='timestamp',
+          unique_key='order_id',
+          updated_at='updated_at',
+          invalidate_hard_deletes=True,
+        )
+    }}
 
-      strategy='timestamp',
-      updated_at='_ETL_LOADED_AT',
-    )
-}}
-
-select * from {{ source( 'jaffle_shop','orders') }}
+    select * from {{ source('jaffle_shop', 'mock_orders') }}
 
 {% endsnapshot %}
