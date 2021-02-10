@@ -11,6 +11,10 @@
     )
 }}
 
+<<<<<<< HEAD
+select * from {{ source('jaffle_shop', 'orders') }}
+=======
 select * from {{ source( 'jaffle_shop','orders') }}
+>>>>>>> 532845fe153e9b54767f9404c3ec6dc2d12e441b
 
 {% endsnapshot %}
