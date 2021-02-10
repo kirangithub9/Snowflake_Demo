@@ -41,5 +41,4 @@ models:
           materialized= 'view'
         stripe
             materialized=view
-
       

@@ -1,16 +1,16 @@
-{% snapshot mock_orders %}
+{% snapshot orders_snapshot %}
 
 {{
     config(
       target_database='training_db',
-      target_schema='snapshots',
-      unique_key='order_id',
+      target_schema='jaffle_shop',
+      unique_key='id',
 
       strategy='timestamp',
-      updated_at='updated_at',
+      updated_at='_ETL_LOADED_AT',
     )
 }}
 
-select * from {{ source('jaffle_shop', 'mock_orders') }}
+select * from {{ source('jaffle_shop', 'orders') }}
 
 {% endsnapshot %}
