@@ -7,10 +7,10 @@
       unique_key='order_id',
 
       strategy='timestamp',
-      updated_at='UPDATED_AT',
+      updated_at='updated_at',
     )
 }}
 
-select * from {{ source('jaffle_shop', 'mock_orders') }}
+select * from {{ source( 'jaffle_shop','mock_orders') }}
 
 {% endsnapshot %}
