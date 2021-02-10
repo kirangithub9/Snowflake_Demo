@@ -23,15 +23,4 @@ sources:
               - unique
               - not_null
       - name: mock_orders
-        description: mock orders data
-        columns:
-          - name: order_id
-            description: Primary Key for mock orders
-            test:
-            description: Raw Mock_Orders
-            columns:
-          - name: order_id
-            description: Primary Key for mock_orders
-            tests:
-              - unique
-              - not_null
+        description: mock orders raw data
