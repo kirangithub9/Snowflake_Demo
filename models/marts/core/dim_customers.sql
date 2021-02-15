@@ -14,6 +14,10 @@ customer_orders as (
         max(order_date) as most_recent_order_date,
         count(order_id) as number_of_orders,
         sum(amount) as lifetime_value
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8218bea588cda3f818c0f85741385a5ae05c8892
     from orders
     group by 1
 ),
