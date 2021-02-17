@@ -4,9 +4,7 @@ sources:
   - name: jaffle_shop
     tables:
       - name: orders
-<<<<<<< HEAD
       - name: customers
-=======
         description: Raw Orders data
         columns:
           - name: id
@@ -16,4 +14,3 @@ sources:
               - not_null
       - name: mock_orders
         description: mock orders raw data
->>>>>>> e14c52ca4922e3b7bc679f9c9fe907abc6d7e03e
