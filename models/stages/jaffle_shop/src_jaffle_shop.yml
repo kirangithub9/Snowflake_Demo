@@ -13,7 +13,6 @@ sources:
               - not_null
       - name: orders
         description: mock orders raw data
-        description: mock orders data
         columns:
           - name: order_id
             description: Primary Key for mock orders
