@@ -2,36 +2,6 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    description: Jaffle_Shop Schema
-    database: training_db
-    description: Training database
     tables:
-      - name: customers
-        description: Raw Customers data
-        columns:
-          - name: id
-            description: Primary Key for Customers
-            tests:
-              - unique
-              - not_null
       - name: orders
-        description: Raw Orders data
-        columns:
-          - name: id
-            description: Primary Key for Orders
-            tests:
-              - unique
-              - not_null
-      - name: mock_orders
-        description: mock orders data
-        columns:
-          - name: order_id
-            description: Primary Key for mock orders
-            test:
-            description: Raw Mock_Orders
-            columns:
-          - name: order_id
-            description: Primary Key for mock_orders
-            tests:
-              - unique
-              - not_null
+      - name: customers

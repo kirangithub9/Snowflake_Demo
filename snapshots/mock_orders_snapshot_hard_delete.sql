@@ -4,7 +4,7 @@
         config(
           target_schema='jaffle_shop',
           strategy='timestamp',
-          unique_key='order_id',
+          unique_key='id',
           updated_at='updated_at',
           invalidate_hard_deletes=True,
         )
