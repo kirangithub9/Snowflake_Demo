@@ -3,7 +3,6 @@ version: 2
 sources:
   - name: jaffle_shop
     tables:
-      - name: orders
       - name: customers
         description: Raw Orders data
         columns:
@@ -12,16 +11,14 @@ sources:
             tests:
               - unique
               - not_null
-      - name: mock_orders
-<<<<<<< HEAD
+      - name: orders
         description: mock orders raw data
-=======
-<<<<<<< HEAD
         description: mock orders data
         columns:
           - name: order_id
             description: Primary Key for mock orders
             test:
+      - name: mock_orders
         description: Raw Mock_Orders
         columns:
           - name: order_id
@@ -29,7 +26,3 @@ sources:
             tests:
               - unique
               - not_null
-=======
-        description: mock orders raw data
->>>>>>> 363063b04c104cc38ca353d55f834fc56a3dbb84
->>>>>>> cc6ebce708370cb013dc67aadeb22b112aa4bc34
