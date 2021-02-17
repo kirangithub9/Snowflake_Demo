@@ -13,4 +13,23 @@ sources:
               - unique
               - not_null
       - name: mock_orders
+<<<<<<< HEAD
         description: mock orders raw data
+=======
+<<<<<<< HEAD
+        description: mock orders data
+        columns:
+          - name: order_id
+            description: Primary Key for mock orders
+            test:
+        description: Raw Mock_Orders
+        columns:
+          - name: order_id
+            description: Primary Key for mock_orders
+            tests:
+              - unique
+              - not_null
+=======
+        description: mock orders raw data
+>>>>>>> 363063b04c104cc38ca353d55f834fc56a3dbb84
+>>>>>>> cc6ebce708370cb013dc67aadeb22b112aa4bc34
