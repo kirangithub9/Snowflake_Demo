@@ -25,9 +25,5 @@ sources:
           - name: order_id
             description: Primary Key for mock_orders
             tests:
-<<<<<<< HEAD
-              - unique
-=======
               - unique
               - not_null
->>>>>>> c1239516a5189c445044ee25bc793a1ae25e9873
