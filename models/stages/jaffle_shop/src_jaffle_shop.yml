@@ -26,4 +26,8 @@ sources:
             description: Primary Key for mock_orders
             tests:
               - unique
+<<<<<<< HEAD
               - not_null
+=======
+              - not_null
+>>>>>>> e92f1c02a066065885fb2426f9b68540006dfcb6

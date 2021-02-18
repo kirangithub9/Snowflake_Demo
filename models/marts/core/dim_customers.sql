@@ -26,7 +26,7 @@ final as (
         employee.email,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
-        coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
+       -- coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
         customer_orders.lifetime_value
     from customers
     join employee using (customer_id)
